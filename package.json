@@ -1,0 +1,18 @@
+{
+  "name": "nodejs-section3",
+  "version": "1.0.0",
+  "description": "nodejs course section 3",
+  "main": "app.js",
+  "author": "thuong.tran",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "prod": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.0-beta11"
+  }
+}
