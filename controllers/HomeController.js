@@ -1,4 +1,4 @@
-const _getIndexView = (req, res) => {
+const getIndexView = (req, res) => {
     //res.send("Home page")
     const model = {
         user: {
@@ -11,8 +11,21 @@ const _getIndexView = (req, res) => {
     res.render('home', model)
 }
 
-const _getContactView = (req, res) => {
+const getContactView = (req, res) => {
     res.render('contact')
 }
-exports.getIndexView = _getIndexView
-exports.getContactView = _getContactView
+
+const getAddUserView = (req, res) => {
+    res.render('add-user')
+}
+
+const postAddUser = (req, res) => {
+
+}
+
+module.exports = {
+    getIndexView,
+    getContactView,
+    getAddUserView,
+    postAddUser
+}

@@ -20,7 +20,10 @@ app.use('/', router)
 app.use('/contact', router)
 app.use('/api', apiRouter)
 
-
-app.listen(port, () => {
-    console.log(`Server is running at https://localhost:${port}`)
+const db = require('./models')
+db.sequelize.sync()
+    .then(() => {
+        app.listen(port, () => {
+        console.log(`Server is running at https://localhost:${port}`)
+    })
 })
