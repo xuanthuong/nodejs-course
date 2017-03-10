@@ -1,3 +1,4 @@
+const UserService = require('../services/UserService')
 const getIndexView = (req, res) => {
     //res.send("Home page")
     const model = {
@@ -20,12 +21,30 @@ const getAddUserView = (req, res) => {
 }
 
 const postAddUser = (req, res) => {
+    //Goi qua cho service xu ly, vao db lay du lieu
+    const username = req.body.username
+    const email = req.body.email
+    UserService.addUser(username, email)
+        .then((user) => {
+            console.log(`Added 1 user: `, user)
+            res.redirect('/add-user')
+        })
+}
 
+const getUserListView = (req, res) => {
+    UserService.getUserList()
+    .then((users) => {
+        console.log(`Users List: `, users)
+        res.render('user-list', {
+            users: users
+        })
+    })
 }
 
 module.exports = {
     getIndexView,
     getContactView,
     getAddUserView,
-    postAddUser
+    postAddUser,
+    getUserListView,
 }

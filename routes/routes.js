@@ -7,5 +7,6 @@ router.get('/contact', HomeController.getContactView)
 router.route('/add-user')
   .get(HomeController.getAddUserView)
   .post(HomeController.postAddUser)
+router.get('/users', HomeController.getUserListView)
 
 module.exports = router
