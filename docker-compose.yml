@@ -1,0 +1,23 @@
+version: '2'
+services:
+  web:
+    build: .
+    image: nodetechtalk
+    volumes:
+      - .:/usr/src/app
+    container_name: techtalkcon
+    ports:
+      - "8003:8080"
+    depends_on:
+      - mysqldb
+  mysqldb:
+    image: mysql
+    container_name: mysqlnode
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=123789
+      - MYSQL_DATABASE=nodejs_course
+      - MYSQL_USER=nodejs_course_user
+      - MYSQL_PASSWORD=123789
+    ports:
+      - "3306:3306"

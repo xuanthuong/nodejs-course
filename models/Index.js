@@ -7,7 +7,8 @@ if (NODE_ENV == 'developement'){
     dotenv.load({path: path.join(__dirname, '..', '.env')})
 }
 
-const db_uri = process.env.DATABASE_URI || 'mysql://nodejs_course_user:123789@localhost:3306/nodejs_course'
+// const db_uri = process.env.DATABASE_URI || 'mysql://nodejs_course_user:123789@localhost:3306/nodejs_course'
+const db_uri = process.env.DATABASE_URI || 'mysql://nodejs_course_user:123789@mysqldb:3306/nodejs_course'
 
 const sequelize = new Sequelize(db_uri)
 
