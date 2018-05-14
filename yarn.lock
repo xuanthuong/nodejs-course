@@ -151,6 +151,10 @@ bluebird@^3.0, bluebird@^3.3.4, bluebird@^3.4.6:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.0.tgz#791420d7f551eea2897453a8a77653f96606d67c"
 
+bluebird@~2.9.24:
+  version "2.9.34"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-2.9.34.tgz#2f7b4ec80216328a9fddebdf69c8d4942feff7d8"
+
 body-parser@^1.16.1:
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.16.1.tgz#51540d045adfa7a0c6995a014bb6b1ed9b802329"
@@ -392,6 +396,10 @@ delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
 
+depd@^1.0.1:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
+
 depd@^1.1.0, depd@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.0.tgz#e1bd82c6aab6ced965b97b88b17ed3e528ca18c3"
@@ -407,6 +415,10 @@ doctypes@^1.1.0:
 dotenv@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-4.0.0.tgz#864ef1379aced55ce6f95debecdce179f7a0cd1d"
+
+dottie@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/dottie/-/dottie-0.3.1.tgz#4185f777489960ac084131de3f9a14a179bb749f"
 
 dottie@^1.0.0:
   version "1.1.1"
@@ -646,6 +658,10 @@ generate-object-property@^1.1.0:
   resolved "https://registry.yarnpkg.com/generate-object-property/-/generate-object-property-1.2.0.tgz#9c0e1c40308ce804f4783618b937fa88f99d50d0"
   dependencies:
     is-property "^1.0.0"
+
+generic-pool@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/generic-pool/-/generic-pool-2.2.0.tgz#8b465c1a7588ea9dd2bb133bda0bb66bfef8a63e"
 
 generic-pool@2.4.2:
   version "2.4.2"
@@ -1063,6 +1079,10 @@ lodash@4.12.0:
   version "4.12.0"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.12.0.tgz#2bd6dc46a040f59e686c972ed21d93dc59053258"
 
+lodash@^3.9.3:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
+
 longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
@@ -1146,6 +1166,12 @@ minimist@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
+moment-timezone@^0.4.0:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.4.1.tgz#81f598c3ad5e22cdad796b67ecd8d88d0f5baa06"
+  dependencies:
+    moment ">= 2.6.0"
+
 moment-timezone@^0.5.4:
   version "0.5.11"
   resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.11.tgz#9b76c03d8ef514c7e4249a7bbce649eed39ef29f"
@@ -1155,6 +1181,10 @@ moment-timezone@^0.5.4:
 "moment@>= 2.6.0", moment@^2.13.0:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
+
+moment@^2.9.0:
+  version "2.22.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.1.tgz#529a2e9bf973f259c9643d237fda84de3a26e8ad"
 
 mongodb-core@2.1.9:
   version "2.1.9"
@@ -1214,6 +1244,10 @@ node-pre-gyp@^0.6.29:
     semver "~5.3.0"
     tar "~2.2.1"
     tar-pack "~3.3.0"
+
+node-uuid@~1.4.1:
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/node-uuid/-/node-uuid-1.4.8.tgz#b040eb0923968afabf8d32fb1f17f1167fdab907"
 
 nodemon@^1.11.0:
   version "1.11.0"
@@ -1289,6 +1323,10 @@ once@^1.3.0, once@~1.3.0, once@~1.3.3:
   resolved "https://registry.yarnpkg.com/once/-/once-1.3.3.tgz#b2e261557ce4c314ec8304f3fa82663e4297ca20"
   dependencies:
     wrappy "1"
+
+oracledb@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/oracledb/-/oracledb-2.2.0.tgz#424222d00721b1656181a0efa8b452193d113ba2"
 
 os-homedir@^1.0.0:
   version "1.0.2"
@@ -1685,6 +1723,23 @@ send@0.14.2:
     range-parser "~1.2.0"
     statuses "~1.3.1"
 
+sequelize-oracle@^3.3.2-0.0:
+  version "3.3.2-0.0"
+  resolved "https://registry.yarnpkg.com/sequelize-oracle/-/sequelize-oracle-3.3.2-0.0.tgz#a6ad680be28b19f08457f5f7a51de72a3a2a6e4a"
+  dependencies:
+    bluebird "~2.9.24"
+    depd "^1.0.1"
+    dottie "^0.3.1"
+    generic-pool "2.2.0"
+    inflection "^1.6.0"
+    lodash "^3.9.3"
+    moment "^2.9.0"
+    moment-timezone "^0.4.0"
+    node-uuid "~1.4.1"
+    shimmer "1.0.0"
+    toposort-class "~0.3.0"
+    validator "^3.34.0"
+
 sequelize@^3.30.2:
   version "3.30.2"
   resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-3.30.2.tgz#8fb5a5769a01777451593924092f9d3061eb935f"
@@ -1736,6 +1791,10 @@ shebang-command@^1.2.0:
 shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
+
+shimmer@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/shimmer/-/shimmer-1.0.0.tgz#49c2d71c678360b802be18b278382d1cbb805c39"
 
 shimmer@1.1.0:
   version "1.1.0"
@@ -1887,6 +1946,10 @@ toposort-class@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/toposort-class/-/toposort-class-1.0.1.tgz#7ffd1f78c8be28c3ba45cd4e1a3f5ee193bd9988"
 
+toposort-class@~0.3.0:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/toposort-class/-/toposort-class-0.3.1.tgz#d1333aed734f8608ced1286218bd2c45f60eff48"
+
 touch@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/touch/-/touch-1.0.0.tgz#449cbe2dbae5a8c8038e30d71fa0ff464947c4de"
@@ -1966,6 +2029,10 @@ uuid@^2.0.1:
 uuid@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
+
+validator@^3.34.0:
+  version "3.43.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-3.43.0.tgz#96464b992d4196833d97a194bf40b19ff54bae05"
 
 validator@^5.2.0:
   version "5.7.0"
