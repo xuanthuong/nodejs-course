@@ -49,20 +49,20 @@ oracledb.getConnection(
     }
     connection.execute(
       // The statement to execute
-      `SELECT USERNAME FROM TEST`,
+      `SELECT * FROM TEST`,
 
-      // The "bind value" 180 for the bind variable ":id"
-      [180],
+      // // The "bind value" 180 for the bind variable ":id"
+      // [180],
 
       // execute() options argument.  Since the query only returns one
       // row, we can optimize memory usage by reducing the default
       // maxRows value.  For the complete list of other options see
       // the documentation.
-      { maxRows: 1
-        //, outFormat: oracledb.OBJECT  // query result format
-        //, extendedMetaData: true      // get extra metadata
-        //, fetchArraySize: 100         // internal buffer allocation size for tuning
-      },
+      // { maxRows: 1
+      //   //, outFormat: oracledb.OBJECT  // query result format
+      //   //, extendedMetaData: true      // get extra metadata
+      //   //, fetchArraySize: 100         // internal buffer allocation size for tuning
+      // },
 
       // The callback function handles the SQL execution results
       function(err, result) {
@@ -72,8 +72,8 @@ oracledb.getConnection(
           return;
         }
         console.log("success");
-        // console.log(result.metaData); // [ { name: 'DEPARTMENT_ID' }, { name: 'DEPARTMENT_NAME' } ]
-        // console.log(result.rows);     // [ [ 180, 'Construction' ] ]
+        console.log(result.metaData); // [ { name: 'DEPARTMENT_ID' }, { name: 'DEPARTMENT_NAME' } ]
+        console.log(result.rows);     // [ [ 180, 'Construction' ] ]
         doRelease(connection);
       });
   });
